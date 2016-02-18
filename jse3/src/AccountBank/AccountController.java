@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class AccountController {
 	public static void main(String[] args) {
 		AccountService account = new AccountServiceImpl();
+		AdminService admin = new AdminServiceImpl();
+		
 		Scanner scanner =new Scanner(System.in);
 		
 		
@@ -15,7 +17,7 @@ public class AccountController {
 			case 1:
 				System.out.println("이름, 비번 입력하시오.");
 			
-				System.out.println(account.open(scanner.next(), scanner.nextInt()));
+				System.out.println(admin.open(scanner.next(), scanner.nextInt()));
 				break;
 				
 			case 2:	

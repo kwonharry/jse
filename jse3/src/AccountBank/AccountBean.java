@@ -11,9 +11,6 @@ public class AccountBean {
 	private int password;
 
 	
-	
-	
-	
 	// 멤버메소드 에어리어(멤버메소드를 정의한 영역)
 	public AccountBean() { // 생성자
 		this.accountNo = (int) ((Math.random() * 9999) + 1000);
