@@ -10,7 +10,7 @@ public class AccountMain {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("이름, 비번 입력하시오.");
 
-		AdminService admin = new AdminServiceImpl();
+		AdminService admin = new AdminServiceImpl(100);
 		AccountService account = new AccountServiceImpl();
 		admin.open(scanner.next(), scanner.nextInt());
 		System.out.println("얼마를 입금하실건가요?");

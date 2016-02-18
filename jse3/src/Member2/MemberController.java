@@ -1,4 +1,4 @@
-package Member;
+package Member2;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class MemberController {
 	
 	public static void main(String[] args) {
 		Scanner scanner =new Scanner(System.in);
-		MemberService member= new MemberServiceImpl();
+		MemberService member= new MemberServiceImpl(100);
 		MemberBean mem = null;
 		
 		

@@ -1,4 +1,4 @@
-package Member;
+package Member2;
 
 public class MemberBean {
 	private String userid;

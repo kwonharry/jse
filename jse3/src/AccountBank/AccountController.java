@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class AccountController {
 	public static void main(String[] args) {
 		AccountService account = new AccountServiceImpl();
-		AdminService admin = new AdminServiceImpl();
+		AdminService admin = new AdminServiceImpl(100);
 		
 		Scanner scanner =new Scanner(System.in);
 		

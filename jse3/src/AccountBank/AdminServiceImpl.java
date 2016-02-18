@@ -2,9 +2,17 @@ package AccountBank;
 
 public class AdminServiceImpl implements AdminService {
 	AccountBean account = new AccountBean();
-	private AccountBean[] accountList= new AccountBean[100];
-	int count=0; //멤버변수지만 초기값이 필요한 경우에는 쓸 수 있다
 	
+	private AccountBean[] accountList;
+	int count=0; //멤버변수지만 초기값이 필요한 경우에는 쓸 수 있다
+	//초기화는 동작이며, 동작(기능)은 메소드 담당
+	
+	//생성자 : 객체를 생성하는 메소드
+	//메소드에어리어
+	public AdminServiceImpl(int count){
+		
+	accountList=new AccountBean[count];
+	}
 	
 	public int getCount() {
 		return count;
